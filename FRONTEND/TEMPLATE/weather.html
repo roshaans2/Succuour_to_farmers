@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <title>Document</title>
+    <style>
+        h1{
+            font-family: 'Poppins', sans-serif;
+            margin-left: 40%;
+            font-size: 100px;
+            color: #42855B;
+            box-shadow: thistle 2px;
+            width: 250px;
+        }
+        .bg{
+            padding: 0.5%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction:row;
+        }
+        
+        .b1{
+            padding-bottom: 2%;
+            width: 30%;
+            height: 50%;
+            border: 2px solid #42855B;
+            border-radius: 5%;
+            background-color: rgb(255, 255, 255);
+        }
+        input[type="submit"]{
+            width: 50%;
+            padding: 8px 10px;
+            font-size: 15px; 
+            border: 0px;
+            background:#42855B;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+            outline: none;
+        }
+        input[type="text"]
+        {
+            margin-left: 15%;
+            width: 60%;
+            padding: 2%;
+            border-radius: 5px;
+            border: none;
+            background: rgba(255, 255, 255, 0.75);
+            box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.1),
+                inset -3px -3px 8px rgba(55, 211, 159, 0.575);
+            margin-bottom: 20px;
+            transform: scaleX(1);
+        }
+        input[type="submit"]:hover{
+            box-shadow: #97af98 10px;
+        }
+        .center{
+            display: flexbox;
+            padding-left: 40%;
+        }
+        img{
+            margin-left: 5%;
+            padding: 10%;
+            width: 70%;
+            border:#97af98;
+            border-radius: 20%;
+        }
+        p{
+            padding: 5%;
+            font-family: 'Poppins', sans-serif;
+            font-size:large;
+            font-style: oblique;
+            font-weight: 100;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>weather</h1>
+    <div class="bg">
+        <div class="b1">
+            <img src="/ROTRACT/images/weather.jpg" alt="" srcset="" width="100%">
+            <p style="text-align: center;">Know your weather</p>
+            <form action = 'weatherForecast' method="POST">
+                <input type="text" name="city_name" id="city_name" placeholder="ENTER CITY:">
+                <div class="center"><input type="submit" value="submit"></div>
+            </form> 
+        </div>
+        <div class="b1">
+            <img src="/ROTRACT/images/weather.jpg" alt="" srcset="" width="100%">
+            <p style="text-align: center;">Visualizer</p>
+            <a href="/weatherVisualize"><div class="center"><input type="submit" value="CLICK"></div></a> 
+        </div>
+        <div class="b1">
+            <img src="/ROTRACT/images/weather.jpg" alt="" srcset="" width="100%">
+            <p style="text-align: center;">Get Weather Map</p>
+            <a href="/weatherMap"><div class="center"><input type="submit" value="CLICK"></div></a>
+        </div>
+    </div>
+    
+</body>
+</html>

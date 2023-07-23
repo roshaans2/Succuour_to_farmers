@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <link rel="stylesheet" href="{{ url_for('static', filename='donate.css') }}">
+    </head>
+    <body>
+        <div style="justify-content: flex-end;display: flex;" id="google_translate_element"></div>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <div>
+            <h1 class="title">Donate To Farmers</h1>
+        </div>
+        <div class="add_story">
+            <a href="/donate_forms"><button class="btn">Add your story</button></a>
+        </div>
+        <div class="base"> 
+            <div class="story">
+                {% for item in data %}
+                <h3 class="story_title">{{item[1]}}</h3>
+                <p>{{item[2]}}</p>
+                <p>Gpay Number:{{item[3]}}</p>
+                <p>Date published:{{item[0]}}</p>
+                <br><br><br>
+                {% endfor %}
+            </div> 
+            <!-- <div class="main">
+                <h3 class="title">Donate Now</h3>
+                <div class="in">Amount<input type="text" value="0.0"></div>
+                <button class="btn">Make Payment</button>
+            </div> -->
+        </div>
+       
+        
+    </body>
+</html>

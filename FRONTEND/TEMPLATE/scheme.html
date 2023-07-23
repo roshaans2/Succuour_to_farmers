@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schemes</title>
+    <style>
+        h1{
+            font-size: 60px;
+            text-align: center;
+            color: darkgreen;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap; /* responsive */
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: center;
+    }
+
+    .container .card{
+        border-radius: 10px;
+        overflow: hidden;
+        border: 1px solid #e0e0e0;
+        transition: all 0.3s ease-in-out ;
+        margin: 12px;
+        cursor: pointer;
+    } 
+
+    .container .card img{
+        width: 300px;
+        height: 180px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .container .card h2{
+        padding: 10px;
+        font-size: 15px;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .container .card:hover{
+        transform: scale(1.05);
+
+}
+    </style>
+</head>
+<body>
+    <h1>SCHEMES TO FARMERS</h1>
+    
+    <div class="container">
+        <div class="card"><a href="https://pmfby.gov.in/"><img src="{{ url_for('static', filename='s1.jpg') }}" alt="" srcset=""></a></div>
+        <div class="card"><a href="https://dmsouthwest.delhi.gov.in/scheme/paramparagat-krishi-vikas-yojana/"><img src="{{ url_for('static', filename='s2.png') }}" alt="" srcset=""></a></div>
+        <div class="card"><a href="http://dmi.gov.in/Schemegby.aspx"><img src="{{ url_for('static', filename='s3.jpg') }}" alt="" srcset=""></a></div>
+        <div class="card"><a href="https://cish.icar.gov.in/event_page.php?a=Launch%20of%20Pradhan%20Mantri%20Kisan%20Maandhan%20Yojana%20(PMKMY)#:~:text=%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A7%E0%A4%BE%E0%A4%A8%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A5%80%20%E0%A4%95%E0%A4%BF%E0%A4%B8%E0%A4%BE%E0%A4%A8%20%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%A7%E0%A4%A8%20%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE%20(%E0%A4%AA%E0%A5%80%E0%A4%8F%E0%A4%AE%E0%A4%95%E0%A5%87%E0%A4%8F%E0%A4%AE%E0%A4%B5%E0%A4%BE%E0%A4%88)%20%E0%A4%95%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A5%8B%E0%A4%9A%E0%A4%A8&text=%E0%A4%AF%E0%A4%B9%20%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE%2018%20%E0%A4%B8%E0%A5%87%2040,%E0%A4%89%E0%A4%A8%E0%A4%95%E0%A5%80%20%E0%A4%89%E0%A4%AE%E0%A5%8D%E0%A4%B0%20%E0%A4%AA%E0%A4%B0%20%E0%A4%A8%E0%A4%BF%E0%A4%B0%E0%A5%8D%E0%A4%AD%E0%A4%B0%20%E0%A4%B9%E0%A5%88%E0%A5%A4"><img src="{{ url_for('static', filename='s4.jpg') }}" alt="" srcset=""></a></div>
+        <div class="card"><a href="https://pmkisan.gov.in/"><img src="{{ url_for('static', filename='s5.jpg') }}" alt="" srcset=""></a></div>
+        <div class="card"><a href="https://pmkisan.gov.in/"><img src="{{ url_for('static', filename='s6.jpg') }}" alt="" srcset=""></a></div>
+        <div class="card"><a href="https://www.enam.gov.in/web/"><img src="{{ url_for('static', filename='s8.jpg') }}" alt="" srcset=""></a></div>
+        <div class="card"><a href="https://www.nabard.org/content1.aspx?id=1720&catid=8&mid=8"><img src="{{ url_for('static', filename='s3.jpg') }}" alt="" srcset=""></a></div>
+    </div>
+    
+</body>
+</html>

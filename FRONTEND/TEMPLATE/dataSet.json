@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp,temperature,desc": "04-05-2023 15:00,29.98,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "04-05-2023 18:00,29.58,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "04-05-2023 21:00,28.91,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "05-05-2023 00:00,28.2,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "05-05-2023 03:00,28.32,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "05-05-2023 06:00,30.19,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "05-05-2023 09:00,30.72,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "05-05-2023 12:00,30.89,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "05-05-2023 15:00,29.28,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "05-05-2023 18:00,28.95,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "05-05-2023 21:00,27.89,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "06-05-2023 00:00,27.3,moderate rain"
+  },
+  {
+    "timestamp,temperature,desc": "06-05-2023 03:00,26.57,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "06-05-2023 06:00,26.82,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "06-05-2023 09:00,27.15,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "06-05-2023 12:00,27.51,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "06-05-2023 15:00,27.33,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "06-05-2023 18:00,26.78,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "06-05-2023 21:00,26.22,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "07-05-2023 00:00,25.74,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "07-05-2023 03:00,28.23,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "07-05-2023 06:00,32.01,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "07-05-2023 09:00,31.85,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "07-05-2023 12:00,30.47,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "07-05-2023 15:00,29.66,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "07-05-2023 18:00,29.57,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "07-05-2023 21:00,29.15,few clouds"
+  },
+  {
+    "timestamp,temperature,desc": "08-05-2023 00:00,28.01,broken clouds"
+  },
+  {
+    "timestamp,temperature,desc": "08-05-2023 03:00,31.22,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "08-05-2023 06:00,34.09,broken clouds"
+  },
+  {
+    "timestamp,temperature,desc": "08-05-2023 09:00,33.4,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "08-05-2023 12:00,31.27,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "08-05-2023 15:00,31.1,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "08-05-2023 18:00,29.84,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "08-05-2023 21:00,29.14,light rain"
+  },
+  {
+    "timestamp,temperature,desc": "09-05-2023 00:00,28.8,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "09-05-2023 03:00,30.93,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "09-05-2023 06:00,34.94,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "09-05-2023 09:00,35.95,overcast clouds"
+  },
+  {
+    "timestamp,temperature,desc": "09-05-2023 12:00,34.08,overcast clouds"
+  }
+]

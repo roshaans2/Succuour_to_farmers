@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='fertilizer_recommend.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+        <link rel="stylesheet" href="{{ url_for('static', filename='crop_predict.css') }}">
+    <style>
+      /* *{
+        margin: 10;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Poppins', sans-serif;
+      }
+      body {
+        color: #42855B;
+      }
+      h2{
+        text-align: center;
+        font-size: 42px;
+        font-weight: 200;
+      }
+      .upload{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .upload button{
+        width:200px;
+        height:40px;
+        border-radius: 10px;
+        margin-top: 10%;
+        margin-left: 25%;
+        background-color: #42855B;
+        color:white;
+        border: none;
+        cursor: pointer;
+      }
+      .upload #inputfile{
+        margin-left:18%;
+      }
+
+      img{
+        border-radius: 10px;
+        margin-left: 15%;
+      } */
+      /* .border{
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: #131212;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            color: #287205;
+            margin-bottom: 10px;
+            font-size:x-large;
+        }
+        .border {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 60px;
+            background: aliceblue;
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+            box-shadow: 20px 20px 50px rgba(187, 3, 13, 0.932),
+                -20px -20px 50px rgb(176, 255, 199);
+        }
+
+        .opt,.img,select,input[type="file"]{
+            padding: 10px;
+            border-radius: 25px;
+            border:#287205;
+            background: rgba(255, 255, 255, 0.75);
+            box-shadow: inset 3px 3px 8px rgba(0, 0, 0, 0.1),
+                inset -3px -3px 8px rgb(250, 78, 48);
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bolder;
+            font-size: large;
+        }
+        #img-preview {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+    </style>
+  </head>
+  <body>
+    <!-- <div style="justify-content:flex-end;display:flex;" id="google_translate_element"></div>
+
+            <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+            </script>
+
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <h2><b>Plant Disease Prediction</b></h2>
+    <div class="upload">
+      <form method=POST action="/disease-predict" enctype=multipart/form-data>
+        <h2><b>Upload Image</b></h2>
+        <input type="text" name="crop" id="crop">
+        <input type="file" name="file" class="form-control-file" id="inputfile" onchange="preview_image(event)" style="font-weight: bold;">
+        <br>
+        <br>
+        <img id="output-image"/>
+        <button type="submit" style="font-weight: bold;">Predict</button>
+      </form>
+      
+    </div> -->
+    <div class="wrapper">
+      <form method=POST action="/disease-predict" enctype=multipart/form-data>
+        <div class="title">
+          CROP DISEASE DETECTION
+       </div>
+        <div class="form">
+          <div class="inputfield">
+            <label for="crop-list">Choose from the list &nbsp;</label>
+            <select  id="crop-list" name="crop">
+                <option value="">--select--</option>
+                <option value="apple" id="apple" name="crop">Apple</option>
+                <option value="cherry" id="cherry" name="crop">Cherry</option>
+                <option value="corn" id="corn" name="crop">Corn</option>
+                <option value="grape" id="grape" name="crop">Grape</option>
+                <option value="peach" id="peach" name="crop">Peach</option>
+                <option value="pepper" id="pepper" name="crop">Pepper</option>
+                <option value="potato" id="potato" name="crop">Potato</option>
+                <option value="strawberry" id="strawberry" name="crop">Strawberry</option>
+                <option value="tomato" id="tomato" name="crop">Tomato</option>
+            </select>
+           </div>
+          
+            <div class="img inputfield">
+                <label for="image">Choose an image to be uploaded</label>
+                <input type="file" name="file" id="img">
+            </div>
+            <div class="inputfield">
+              <button class="btn" type="submit" style="font-weight: bold;">Predict</button>
+            </div>
+            <div id="img-preview" style="height: fit-content;"></div>
+        </div>
+         
+      </form>
+  </div>
+
+    <script type="text/javascript">
+      // function preview_image(event) {
+      //   var reader = new FileReader();
+      //   reader.onload = function () {
+      //     var output = document.getElementById('output-image')
+      //     output.src = reader.result;
+      //   }
+      //   reader.readAsDataURL(event.target.files[0]);
+      // }
+      const fileInput = document.getElementById('img');
+      const imagePreview = document.getElementById('img-preview');
+      
+      fileInput.addEventListener('change', (event) => {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+        
+        reader.addEventListener('load', (event) => {
+          const imageUrl = event.target.result;
+          const imageElement = document.createElement('img');
+          imageElement.src = imageUrl;
+          imagePreview.innerHTML = '';
+          imagePreview.appendChild(imageElement);
+        });
+        reader.readAsDataURL(file);
+      });
+    </script>
+  </body>
+</html>

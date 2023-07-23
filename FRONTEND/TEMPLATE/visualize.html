@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+            $.ajax({
+            url: '/data',
+            dataType: 'json',
+            success: function(data) {
+                console.log(data);
+                // Use the data as needed
+            }
+           });
+        //     fetch('dataSet.json')
+        //     .then(response => response.json())
+        //     .then(data => {
+        //       let times = []
+        //         let temps = [];
+        //       data.forEach(v => {
+        //         const [temp, time, _] = Object.values(v)[0].split(',');
+        //         times.push(time);
+        //         temps.push(temp);
+
+        //       })
+        //       times = [...times, ...times, ...times,];
+        //       temps = [...temps, ...temps, ...temps,];
+            
+
+
+        //       const slicer = (x) => ({
+        //         "labels": temps.slice(0, x),
+        //         "datasets":[
+        //             {
+        //                 "label":"Dataset 1",
+        //                 "data":times.slice(0, x),
+        //                 "backgroundColor":"rgba(255, 99, 132, 0.2)",
+        //                 "borderColor":"rgba(255, 99, 132, 1)",
+        //                 "borderWidth":1
+        //             }
+        //         ]
+        //       });
+        //       let i = 5;
+        //       const ctx = document.getElementById('myChart').getContext('2d');
+        //       let chartRef = new Chart(ctx, {
+        //             type: 'line',
+        //             data: slicer(i)
+        //           });
+        //       setInterval(() => {
+        //             let labelsLength = chartRef.data.labels.length;
+        //             chartRef.data.labels = chartRef.data.labels.concat(temps.slice(labelsLength, labelsLength + i));
+        //             console.log(labelsLength);
+        //             chartRef.data.datasets.forEach((dataset) => {
+        //                 let dataLength = dataset.data.length;
+        //                 dataset.data = dataset.data.concat(times.slice(dataLength, dataLength + i));
+        //             });
+        //             chartRef.update();
+        //           i += 1;
+        //       }, 1400);
+        // });
+            // time_temp.forEach((chartData, index) => {
+            // const canvas = document.getElementById(`myChart${index}`);
+            // const ctx = canvas.getContext('2d');
+            // const chart = new Chart(ctx, {
+            //     type: 'bar',
+            //     data: chartData,
+            //     options: {}
+            // });
+        // });
+    // }).catch(console.log)
+    </script>
+</head>
+<body>
+    <canvas id="myChart"></canvas>
+</body>
+</html>
