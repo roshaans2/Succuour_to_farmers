@@ -12,4 +12,4 @@ Frontend - HTML, CSS, Javascript
 Backend - Python, SQL, Flask framework
 
 ## Demo Link
-https://drive.google.com/file/d/1l7fqHwM8DvwBEPQN07HoFDxQpIkxIh2a/view?usp=share_link
+https://drive.google.com/file/d/1CZT9Qju0u9bh4rnwqS2JpyjE9ogaHBQp/view?usp=sharing
