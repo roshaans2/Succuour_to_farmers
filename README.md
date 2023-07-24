@@ -9,6 +9,7 @@ A application that assist farmers using ML and DL Techniques.
 
 ## Tech Stack
 Frontend - HTML, CSS, Javascript
+
 Backend - Python, SQL, Flask framework
 
 ## Demo Link
