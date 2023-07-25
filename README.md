@@ -1,5 +1,5 @@
 # Succuour to Farmers
-A application that assist farmers using ML and DL Techniques.
+A application that assist farmers using ML and DL Techniques. 
 
 ## Features 
 1. Crop and Fertilizer recommendation on analysing N, P, K values of Soil.
