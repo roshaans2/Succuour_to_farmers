@@ -1,4 +1,4 @@
-# Succuour to Farmers
+# Succuour to Farmers 
 A application that assist farmers using ML and DL Techniques. 
 
 ## Features 
